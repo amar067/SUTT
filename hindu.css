@@ -1,0 +1,255 @@
+header{
+    display: flex;
+    border-bottom: 5px solid #ABB;
+}
+.items{
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 19px;
+    border-top: 5px solid #000;
+    width: 170px;
+    position: relative;
+    padding-top: 2px;
+}
+a{
+    color: #000;
+}
+
+.items a:hover{
+    color: red;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 50px;
+    background-image: url("paper.gif");
+    
+}
+
+.navigation{
+    display: flex;
+    
+}
+.navopt{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.navoptli{
+    color: #b00020;
+    font-size: 12px;
+    font-family: "Merriweather Sans",sans-serif;
+    text-decoration: none;
+    letter-spacing: .7px;
+}
+
+li{
+    list-style: none;
+    padding: 34px 23px;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+section{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menucontainer{
+    position: absolute;
+    right: 4px;
+    top: 29px;
+    cursor: pointer;
+    border: 1px solid rgba(141,141,141,0.6);
+    border-radius: 4px;
+    padding: 4px 6px;
+    width: 39px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menubutton{
+    position: absolute;
+    right: 4px; 
+    top: 29px;
+    cursor: pointer;
+    border: 1px solid rgba(141,141,141,0.6);
+    border-radius: 4px;
+    padding: 4px 6px;
+    width: 39px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.main{
+    width: 40%;
+    /* display: flex; */
+    /* float: left; */
+}
+
+.mainnewsbox{
+    width: 100%;
+}
+.newsbox{
+    text-align:justify;
+    width: 100%;
+    padding: 7px;
+    border-left: 3px solid #313539;
+    border-right: 3px solid #515559;
+    border-bottom: 1px solid #515559;
+
+}
+.headline{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.headlineimage{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    min-height: unset;
+}
+
+.newsbox2{
+    width: 50%;
+    float: left;
+    font-size: 0.7rem;
+}
+
+.newsbox3{
+    float: right;
+    width: 50%;
+    font-size: 0.7rem;
+    font-weight: 0.7rem;
+}
+.premium{
+    /* float: left; */
+    width: 30%;
+}
+
+
+.premiumtext{
+    color: #b00020;
+    font-family: "Playfair Display",serif;
+    font-weight: 900;
+    padding-left: 70px;
+    margin: 0 0 15px;
+}
+
+.premiumnews{
+    font-family: "Merriweather",serif;
+    font-size: 0.5rem;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    text-align: left;
+    margin: 0px 0 0px;
+    color: #000;
+    font-weight: normal;
+    /* border-right: 2px solid #000;*/
+    border-left: 2px solid #000; 
+}
+
+.premiumnewsheadline{
+    /* float: left; */
+    padding-bottom: 20px;
+    border-bottom: 2px solid #515559;
+}
+
+.latestnews{
+    /* float: left; */
+    width: 30%;
+
+}
+.latestnewsline{
+    font-size: 0.5rem;
+    border-left: 2px solid #000;
+    /* border-right: 2px solid #000; */
+
+}
+
+.main{
+    width: 40%;
+}
+
+@media screen and (max-width:1020px) {
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main{
+        order: 1;
+        flex: 1 0 100%;
+    }
+    .premium{
+        order: 2;
+        width: 50%;
+    }
+    .latestnews{
+        order: 3;
+        width:50%
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main{
+        order: 1;
+        flex: 1 o 100%;
+    }
+    .premium{
+        order: 2;
+        flex: auto;
+        width: 100%;
+    }
+    .latestnews{
+        flex: auto;
+        order: 3;
+        width:100%
+    }
+}
